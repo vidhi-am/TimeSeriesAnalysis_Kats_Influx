@@ -7,6 +7,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 token = os.environ.get("<your influx db token>")
 org = "<your influx db org name>"
 url = "<your influx db custom url>"
+Bucket = "<your influx bucket name>"
 
 client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
